@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scle=1.0"/>
+        <title>Apps landing page</title>
+        <link rel="stylesheet"href="./style.css"/>
+        <link rel="preconnect"href='http://fonts.gstatic.com'>
+        <link rel="preconnect"href='http://fonts.gstatic.com'crossoringin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+ </head>
+  <body>
+    <header>
+                         <!--menu-->
+          <a href="https://web.whatsapp.com/">
+            <button class="btn whatappsweb"> WhatsApp web</button></a>
+
+            <a href="https://www.whatsapp.com/features">
+              <button class="btn features"> features</button></a>
+
+              <a href="https://www.whatsapp.com/download">
+                <button class="btn download"> download</button></a>
+
+                <a href="https://www.whatsapp.com/security">
+                  <button class="btn security">security</button></a>
+
+                  <a href="https://faq.whatsapp.com/">
+                    <button class="btn Help Center"> Help Center</button></a>
+                      
+          <!--Auto slideshow-->
+
+      <section class="mySlides fade"> 
+       <img src="wfb2_n.jpg" style="width:100%">
+      </section>
+
+      <section class="mySlides fade">
+       <img src="wfb3_n.png" style="width:100%">
+      </section>
+
+       <section class="mySlides fade">
+        <img src="wfb.png" style="width:100%">
+      </section>
+      
+
+       <section style="text-align:center;" >
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+        ,<span class="dot"></span> 
+       </sectin>
+       <h1>
+                <!--whatapp home-->
+          <div class="container showcase">
+            <a href="https://www.whatsapp.com/"id="WhatsApp">
+              <i class="fab fa-whatsapp fa-5x">WhatsApp</i></a> </h1>
+            </div>
+                   <!--toggle text-->
+                <button onclick="myFunction()" class="small-lead"id="myDIV">social media to chating wiht familly and friends </p>
+                  </button>
+          
+                </header>
+            
+                    
+            
+                <main>
+                <!--how to use-->
+                    <section class="show"> 
+                     
+                      <video width="500" height="440" controls autoplay>
+                        <source src="How To Use WhatsApp.mp4" type="video/mp4">
+                        <source src="How To Use WhatsApp.mp4" type="video/ogg">
+                      </video>
+                       <p>HOw to use WhatsApp</p>
+                    </section>
+                  
+                        <!--similar apps-->
+                    <section class="icons flex-items">
+                        <h2>Similar App</h2>
+                        <article>
+                        <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&gl=US" target="_blank" id="facebook"><i class="fab fa-facebook fa-3x">Facebook</i></a>
+                        </article>
+                        <article>
+                        <a href="https://twitter.com/download" target="_blank" id="twitter"><i class="fab fa-twitter fa-3x">Twitter</i></a>
+                       </article>
+                       <article>
+                        <a href="https://www.linkedin.com/download" target="_blank" id="linkedin"><i class="fab fa-linkedin fa-3x">Linkedin</i></a>
+                       </article>
+                       <article>
+                        <a href="https://www.microsoft.com/en-us/p/instagram/9nblggh5l9xt?activetab=pivot:overviewtab" target="_blank" id="instagram"><i class="fab fa-instagram fa-3x">Instagram</i></a>
+                        </article>
+                        <button class="btn1 more Apps"> <a href="https://play.google.com/store/apps">more apps ></a></button>
+                    </section>
+
+                    <!--follow us-->
+                    <footer class="flex-simple main-footer">
+                        <section><h3>follow us</h3>
+                            <a href="https://www.facebook.com/WhatsApp" target="_blank" id="facebook"><i class="fab fa-facebook fa-1x"></i></a>
+                            <a href="https://twitter.com/WhatsApp" target="_blank" id="twitter"><i class="fab fa-twitter fa-1x"></i></a>
+                            <a href="https://www.youtube.com/WhatsApp" target="_blank" id="youtube"><i class="fab fa-youtube fa-1x"></i></a>
+                            <a href="https://www.linkedin.com/company/WhatsApp-inc-/" target="_blank" id="linkedin"><i class="fab fa-linkedin fa-1x"></i></a>
+                            <a href="https://www.instagram.com/WhatsApp/" target="_blank" id="instagram"><i class="fab fa-instagram fa-1x"></i></a>
+                        </section>
+                        <p> WhatsApp LLC &copy; 2022.</p>
+                    </footer>
+              
+                     
+                      
+       <script>
+         //auto slideshow
+        let slideIndex = 0;
+         showSlides();
+         function showSlides() {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+          }
+          slideIndex++;
+         if (slideIndex > slides.length) {slideIndex = 1}    
+         for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+          }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+         setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+
+         //toggle text
+         function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "social media to chating wiht familly and friends") {
+    x.innerHTML = "More than 2 billion people in over 180 countries use WhatsApp to stay in touch with friends and family,anytime and anywhere.and because the Some of your most personal moments are shared with WhatsApp, we built end-to-end encryption into our app. When end-to-end encrypted, your messages, photos, videos, voice messages, documents, and calls are secured from falling into the wrong hands.!";
+  } else {
+    x.innerHTML = "social media to chating wiht familly and friends";
+  }
+}
+        </script>
+                         
+       </main>
+    </header>
+  </body>
+</html>
